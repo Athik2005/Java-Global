@@ -11,12 +11,7 @@ class Emp{
 	}
 }
 public class task_1emp_streams {
-
 	public static void main(String[] args) {
-		/*Emp e1 = new Emp("Athik",21,"Manager");
-		Emp e3 = new Emp("Shandeep",33,"System-manager");
-		Emp e2 = new Emp("Kiruthik",31,"System-manager");
-		*/
 		List<Emp> value = new ArrayList<>();
 		Emp e1;
 		Scanner sc = new Scanner(System.in);
@@ -41,5 +36,4 @@ public class task_1emp_streams {
 		}
 		value.stream().filter( name -> name.age>30).map( name -> name.Emp_name.toLowerCase()).sorted().forEach( name -> System.out.println(name));
 	}
-
 }
